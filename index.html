@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MILAGROS</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1></h1>
+      
+      <h1 id="typewriter"></h1>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const text = "Milagros, quieres salir conmigo";
+          let index = 0;
+          const speed = 100; // Adjust typing speed here
+
+          function typeWriter() {
+            if (index < text.length) {
+              document.getElementById("typewriter").innerHTML += text.charAt(index);
+              index++;
+              setTimeout(typeWriter, speed);
+            }
+          }
+
+          typeWriter();
+        });
+      </script>
+      <div class="btn">
+          <a href="index-1.html">SI</a>
+          <a href="#" id="btn-random">NO</a>
+      </div>
+  </div>
+    <!-- Tiktok meowish -->
+    <div class="container">
+      <div class="circle-container"> 
+      
+        <div class="stars1"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+   
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
